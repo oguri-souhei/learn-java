@@ -3,7 +3,7 @@
 ## compile
 - .javaファイルは.classファイルにコンパイルされる
 - .classファイルをjvmが実行する
-![picture 1](../images/80abe4e31c15ace1a00e9d375e58240b0cea96363ef87996479f16adb0cdf36c.png)  
+![picture 1](./images/80abe4e31c15ace1a00e9d375e58240b0cea96363ef87996479f16adb0cdf36c.png)  
 
 ## java platform
 - platformとは
@@ -16,7 +16,7 @@
   - jvm
   - api
 
-![picture 2](../images/0a934461bdc55efdb34dafb88632fc52fcf2d1a145c1141611e4af8c6ddee1d5.png)  
+![picture 2](./images/0a934461bdc55efdb34dafb88632fc52fcf2d1a145c1141611e4af8c6ddee1d5.png)  
 
 ## comments
 - ３種類コメントがある
