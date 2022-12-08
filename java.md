@@ -124,4 +124,10 @@ class ACMEBicycle implements Bicycle {
 
 ## package
 - classやinterfaceをまとめる名前空間
-- 
+
+# variable
+- javaの変数の種類
+  - instance variable
+  - class variable
+  - local variable
+  - parameter
