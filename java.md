@@ -122,3 +122,6 @@ class ACMEBicycle implements Bicycle {
 }
 ```
 
+## package
+- classやinterfaceをまとめる名前空間
+- 
