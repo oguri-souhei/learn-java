@@ -1,3 +1,25 @@
+# 目次
+- [目次](#目次)
+- [概要](#概要)
+  - [compile](#compile)
+  - [java platform](#java-platform)
+  - [comments](#comments)
+  - [main method](#main-method)
+- [class](#class)
+  - [def](#def)
+  - [inheritence](#inheritence)
+  - [interface](#interface)
+  - [package](#package)
+- [variable](#variable)
+  - [javaの変数の種類](#javaの変数の種類)
+  - [命名](#命名)
+  - [default value](#default-value)
+  - [string literal](#string-literal)
+  - [unmeric literal](#unmeric-literal)
+- [Array](#array)
+  - [array util](#array-util)
+
+
 # 概要
 
 ## compile
@@ -126,8 +148,88 @@ class ACMEBicycle implements Bicycle {
 - classやinterfaceをまとめる名前空間
 
 # variable
-- javaの変数の種類
+## javaの変数の種類
   - instance variable
+    - 各インスタンスのproperty
   - class variable
+    - class内部の静的な変数？
   - local variable
   - parameter
+    - 引数のことか？
+## 命名
+- camel caseで名前をつける
+- 定数はupper snake case
+
+## default value
+- 初期化しなくてもデフォルトが決まっている
+
+## string literal
+- char型はsingle quotation で初期化
+
+```java
+char c = 'C'
+```
+
+## unmeric literal
+- アンダースコアで桁を区切ることができる
+- 可読性が向上するらしい
+  
+```java
+long creditCardNumber = 1234_5678_9012_3456L;
+```
+
+# Array
+- 一つのデータ型が固定長で入っている
+- 長さは初期化の時に決定
+
+```java
+// declares an array of integers
+int[] anArray;
+
+// allocates memory for 10 integers
+anArray = new int[10];
+    
+// initialize first element
+anArray[0] = 100;
+```
+## array util
+- 配列をコピーする例
+```java
+class ArrayCopyDemo {
+    public static void main(String[] args) {
+        String[] copyFrom = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",   
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",      
+            "Marocchino", "Ristretto" };
+         
+        String[] copyTo = new String[7];
+        System.arraycopy(copyFrom, 4, copyTo, 0, 7);
+        for (String coffee : copyTo) {
+            System.out.print(coffee + " ");           
+        }
+    }
+}
+```
+
+- こっちのほうが直感的かも
+
+```java
+class ArrayCopyOfDemo {
+    public static void main(String[] args) {
+        String[] copyFrom = {
+            "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",   
+            "Doppio", "Espresso", "Frappucino", "Freddo", "Lungo", "Macchiato",      
+            "Marocchino", "Ristretto" };
+        
+        String[] copyTo = java.util.Arrays.copyOfRange(copyFrom, 2, 9);        
+        for (String coffee : copyTo) {
+            System.out.print(coffee + " ");           
+        }            
+    }
+}
+```
+
+- その他にもutilは揃っている
+  - java.util.Arrays class
+
+
