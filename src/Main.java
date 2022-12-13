@@ -1,8 +1,9 @@
 class Main {
     public static void main(String[] args) {
-        Drink coffee = new Coffee();
-        coffee.setPrice(350);
-        coffee.setSize(Size.SHORT);
-        coffee.print();
+        float aValue = 8933.234f;
+        aValue++;
+        System.out.println(aValue);
+        System.out.println("Hello World!");
+        BicycleInterface myBike = new Bicycle();
     }
 }
