@@ -18,6 +18,8 @@
   - [unmeric literal](#unmeric-literal)
 - [Array](#array)
   - [array util](#array-util)
+  - [for](#for)
+  - [break](#break)
 
 
 # 概要
@@ -232,4 +234,33 @@ class ArrayCopyOfDemo {
 - その他にもutilは揃っている
   - java.util.Arrays class
 
+## for
+- infinite loop
+```java
+for ( ; ; ) {
+}
+```
 
+- iterate array
+```java
+for (int item : items) {
+}
+```
+
+## break
+- kinds
+  - unlabeled break 
+  - labeled break
+- unlabeled break
+  - loopを抜ける時に使用
+- labeled break
+```java
+search: for (i = 0; i < arrayOfInts.length; i++) {
+    for (j = 0; j < arrayOfInts[i].length; j++) {
+        if (arrayOfInts[i][j] == searchfor) {
+            foundIt = true;
+            break search;
+        }
+    }
+}
+```
